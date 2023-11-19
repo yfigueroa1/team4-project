@@ -37,3 +37,8 @@ class InventoryManager:
             self.add_item(barcode, quantity)
         except ValueError:
             print("Invalid quantity. Please enter a number.")
+
+# Example usage
+inventory_manager = InventoryManager()
+inventory_manager.add_item_interactively()
+inventory_manager.show_inventory()
