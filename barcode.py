@@ -28,3 +28,12 @@ class InventoryManager:
                 print(f"Barcode: {barcode}, Count: {count}")
         else:
             print("Inventory is empty.")
+
+    def add_item_interactively(self):
+        barcode = input("Enter the barcode: ")
+        quantity = input("Enter the quantity: ")
+        try:
+            quantity = int(quantity)
+            self.add_item(barcode, quantity)
+        except ValueError:
+            print("Invalid quantity. Please enter a number.")
