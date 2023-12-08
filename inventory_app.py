@@ -97,7 +97,7 @@ class LoginPage(Screen):
                 self.manager.current = 'home'
             else:
                 error_popup = Popup(title='Error', content=Label(text='Invalid email or password.'),
-                                    size_hint=(None, None), size=(200, 30))
+                                    size_hint=(None, None), size=(200, 100))
                 error_popup.open()
         else:
             print("Error: TextInput widgets not found.")
