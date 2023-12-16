@@ -13,21 +13,6 @@ from kivy.metrics import dp
 from kivy.uix.anchorlayout import AnchorLayout 
 from kivy.uix.boxlayout import BoxLayout
 
-import hashlib
-from kivy.app import App
-from kivy.uix.floatlayout import FloatLayout
-from kivy.uix.label import Label
-from kivy.uix.textinput import TextInput
-from kivy.uix.button import Button
-from kivy.uix.screenmanager import ScreenManager, Screen
-from kivy.core.window import Window
-from kivy.uix.image import Image
-from kivy.uix.popup import Popup
-from kivy.graphics import Color, Rectangle
-from kivy.metrics import dp
-from kivy.uix.anchorlayout import AnchorLayout 
-from kivy.uix.boxlayout import BoxLayout
-
 class User:
     def __init__(self, email, password):
         self.email = email       
